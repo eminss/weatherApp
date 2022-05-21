@@ -11,9 +11,9 @@
 </head>
 <header class="bg-secondary p-3">
     <div class="container">
-    <h1 class="text-center">
-        Welcome to your Weather App! :)
-    </h1>
+        <h1 class="text-center">
+            Welcome to your Weather App! :)
+        </h1>
     </div>
 </header>
 
@@ -21,31 +21,57 @@
     <div class="row">
         <form class="col-3">
             <div class="form-group p-2">
-                <label for="inputCity" class="text-primary">Please enter a city</label>
-                <input type="city" class="form-control" id="inputCity" aria-describedby="cityHelp"
-                    placeholder="Seattle, Wa">
+                <label for="inputCity" class="text-white">Please enter a city</label>
+                <input id='userCity' type="city" class="form-control" id="inputCity" aria-describedby="cityHelp"
+                    placeholder="Seattle">
                 <small id="emailHelp" class="form-text text-muted mb-2">We'll save your selection for later.</small>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button id="userSubmit" type="button" class="btn btn-primary">Submit</button>
             </div>
         </form>
-        <div class="container col-9 border text-primary">
-            <div id="temperature">
-                Temperature:
-            </div>
-            <div id="wind">
-                Wind speed:
-            </div>
-            <div id="humidity">
-                Humidity:
-            </div>
-            <div id="weatherDesc">
-                Weather is currently like:
-            </div>
-            <div id="uvIndex">
-                UV index:
+        <div class="container col-9 border text-white">
+            <div class="p-4">
+                <h1 id="currentCity">
+                    Your City
+                </h1>
+                <div id="temperature">
+                    Temperature:
+                </div>
+                <div id="wind">
+                    Wind speed:
+                </div>
+                <div id="humidity">
+                    Humidity:
+                </div>
+                <div id="weatherDesc">
+                    Weather is currently like:
+                </div>
+                <div id="uvIndex">
+                    UV index:
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-3">
+            <h1 class="text-white text-center">Saved cities</h1>
+        </div>
+        <div class="container col-9 border text-white">
+            <div class="p-4">
+                <h1>5 Day Forecast</h1>
+                <div class="row">
+                    <div>
+                        yeet
+                    </div>
+                    <div>
+                        yoink
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -56,5 +82,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-    <script src="./assets/javascript/script.js"></script>
+<script src="./assets/javascript/script.js"></script>
+
 </html>
